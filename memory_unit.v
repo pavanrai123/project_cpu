@@ -5,13 +5,12 @@ input [word_size-1 : 0] data_in;
 output [word_size-1 : 0] data_out;
 input write,clk;
 input [word_size-1 : 0] address;
-reg [word_size-1 : 0] data_out;
 reg [word_size-1 : 0] memory [memory_size-1 : 0];
+assign data_out=memory [address]
 always@(posedge clk)
 begin
-data_out[word_size-1 : 0] <=memory [word_size-1 : 0] [adddres]
 if (write==1)
-=memory [word_size-1 : 0] [adddres]<=data_in[word_size-1 : 0];
+  memory [adddres]<=data_in;
 end
 endmodule
 
