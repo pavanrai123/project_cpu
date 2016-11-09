@@ -1,2 +1,2 @@
 # project_cpu
-A RISC bases Stored-Program Machine
+A RISC based Stored-Program Machine
